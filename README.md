@@ -1,3 +1,5 @@
+我的自述
+
 一位16岁的中考落榜生，年轻的垃圾佬，在外人看来与AI聊天比人多的怪人，反感被监控与无隐私，在有目标的时候会死磕即使浪费了很多时间。
 
 为了一个属于自己的电子产品花过1000多块钱买树莓派5，在上面不知死活的刷了win11玩了几天（后来被生态与架构狠狠上了一课），费尽千辛万苦刷安卓14，只为了有一个独属于自己的数字世界。
@@ -17,6 +19,7 @@
 ---
 
 所涉及技术栈与工具
+
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Spyder](https://img.shields.io/badge/-Spyder-FF0000?style=flat&logo=spyderide&logoColor=white)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)
@@ -29,7 +32,9 @@
 ---
 
 以下是我的加密通信公钥与指纹：
+
 GPG公钥指纹：60FC 42EE 0B9A 1E56 ED73 2537 D42C FBB9 16EB 659D
+
 GPG公钥：
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -87,3 +92,8 @@ kcyaD0ybRyC+0gQfZDlpErwp
 -----END PGP PUBLIC KEY BLOCK-----
 
 ```
+
+[![博客](https://img.shields.io/badge/博客-点击访问-blue?style=flat&logo=github)](https://jerry-hang.github.io/)
+[![Bilibili](https://img.shields.io/badge/Bilibili-个人空间-00A1D6?style=flat&logo=bilibili&logoColor=white)](https://space.bilibili.com/3546695520487520)
+[![邮箱](https://img.shields.io/badge/邮箱-QQ%20mail-EB1923?style=flat&logo=qq&logoColor=white)](mailto:3520143257@qq.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Jerry--Hang-181717?style=flat&logo=github)](https://github.com/Jerry-Hang)
