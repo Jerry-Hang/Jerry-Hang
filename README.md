@@ -28,6 +28,7 @@
 ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=cplusplus&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
 
 ---
 
@@ -35,7 +36,9 @@
 
 GPG公钥指纹：60FC 42EE 0B9A 1E56 ED73 2537 D42C FBB9 16EB 659D
 
-GPG公钥：
+<details>
+<summary>📋 展开查看完整公钥</summary>
+
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -90,6 +93,8 @@ eVACy6DDTxmi/J8m7N6A4qvafEOeBof80+1zoK2TF+GZkC2BAhidMiwm0jFgW17Y
 kcyaD0ybRyC+0gQfZDlpErwp
 =OyuG
 -----END PGP PUBLIC KEY BLOCK-----
+
+</details>
 
 ```
 
