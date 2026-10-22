@@ -1,0 +1,46 @@
+name: Metrics
+
+on:
+  # 每天北京时间 08:00 刷新（UTC 00:00）
+  schedule: [{cron: "0 0 * * *"}]
+  # 支持在 Actions 页面手动触发
+  workflow_dispatch:
+  # 推送到 main 时也刷新一次
+  push: {branches: ["main"]}
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # 必须使用 PAT（METRICS_TOKEN），不能用内置 GITHUB_TOKEN：
+          # 后者是仓库作用域，读不到用户级的提交/PR/issue/活动数据。
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          filename: github-metrics.svg
+          template: classic
+          config_timezone: Asia/Shanghai
+
+          # 基础区：头部信息 + 活动 + 社区 + 仓库
+          base: header, activity, community, repositories
+
+          # 贡献日历（替代已停用的第三方 activity-graph 服务）
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # 语言分布
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage
+
+          # 星标仓库
+          plugin_stars: yes
+          plugin_stars_limit: 4
+
+          # 代码行数
+          plugin_lines: yes

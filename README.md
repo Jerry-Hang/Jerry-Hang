@@ -32,6 +32,36 @@
 
 ---
 
+## 📊 GitHub 统计
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Jerry-Hang&hide_border=true&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=Jerry-Hang&hide_border=true">
+    <img src="https://streak-stats.demolab.com?user=Jerry-Hang&hide_border=true&theme=dark" alt="GitHub 连续贡献统计">
+  </picture>
+</p>
+
+<!--
+  ================================================================
+  metrics 卡片 —— 需先完成一次性配置，否则会显示为破图，故暂时注释
+  ================================================================
+  1) 本仓库 Settings → Secrets and variables → Actions → New repository secret
+     名称填 METRICS_TOKEN，值填你的 GitHub Personal Access Token
+       · 只统计公开数据：不勾任何 scope
+       · 要包含私有贡献：勾 repo，并在账号设置里开启
+         "Include private contributions on my profile"
+  2) 到 Actions 页 → Metrics → Run workflow，手动运行一次
+  3) 运行成功后会生成 github-metrics.svg，届时把下面这段的注释标记删掉：
+
+<p align="center">
+  <img src="github-metrics.svg" alt="GitHub Metrics">
+</p>
+
+-->
+
+---
+
 以下是我的加密通信公钥与指纹：
 
 GPG公钥指纹：60FC 42EE 0B9A 1E56 ED73 2537 D42C FBB9 16EB 659D
