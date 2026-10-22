@@ -14,7 +14,22 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      # 未配置 METRICS_TOKEN 时优雅跳过，避免每天一次红色失败
+      - name: 检查 METRICS_TOKEN 是否已配置
+        id: token
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          if [ -z "$METRICS_TOKEN" ]; then
+            echo "::warning::METRICS_TOKEN 尚未配置，跳过渲染。配置方法见 README 的注释说明。"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 生成 GitHub 统计图
+        if: steps.token.outputs.skip == 'false'
+        uses: lowlighter/metrics@latest
         with:
           # 必须使用 PAT（METRICS_TOKEN），不能用内置 GITHUB_TOKEN：
           # 后者是仓库作用域，读不到用户级的提交/PR/issue/活动数据。
